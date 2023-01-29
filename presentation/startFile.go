@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-
 	file, err := os.Open("model/file.csv") // opens csv file
 	reader := readFile(file, err)          // reads it
 	ourTable, _ := reader.ReadAll()
@@ -42,6 +41,7 @@ func readFile(file *os.File, err error) *csv.Reader {
 	return cvsFile
 }
 
+// Looking for specific position in array where contains our string
 func findCell(xAddr, yAddr string, ourTable [][]string) *string {
 
 	for y := range ourTable {
