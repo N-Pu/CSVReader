@@ -2,8 +2,8 @@ package main
 
 import "strings"
 
-//Splitting string (formula, example "=A1+C20"
-//into array of 2 strings [A1] and [C2].
+//Splitting string (formula, example "=A1+C2")
+//into array of 2 substrings [A1] and [C2].
 //Up next, we are working on each string.
 //We separate symbol and numbers (example: [A1] -> [A], [1]
 //Searching them in our columns and rows (but specifically

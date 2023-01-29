@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+
 	file, err := os.Open("model/file.csv") // opens csv file
 	reader := readFile(file, err)          // reads it
 	ourTable, _ := reader.ReadAll()
@@ -26,7 +27,6 @@ func main() {
 	for i := 0; i < len(ourTable); i++ {
 		fmt.Println(strings.Join(ourTable[i], ","))
 	}
-
 }
 
 // Reading file from csv file and returning
